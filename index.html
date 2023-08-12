@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<style>
+        @font-face {
+            font-family: 'TrixieCyr';
+            src: url(.\TrixieCyr.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'ORC';
+            src: url(.\orc_b.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'Ancient_Kyiv';
+            src: url(.\Ancient_Kyiv.ttf) format('truetype');
+        }
+        @font-face {
+            font-family: 'SourceSerif4';
+            src: url(.\SourceSerif4.ttf) format('truetype');
+        }
+	</style>
+	<link rel="stylesheet" href="style.css">
+</head>
+<html>
+<body>
+
+	<div class="gears">
+		<div class="big_gear">
+			<div class="big_gear_center">
+				<span class="gear_text">Криївка</span>
+			</div>
+			<div class="big_gear_tooth"></div>
+			<div class="big_gear_tooth"></div>
+			<div class="big_gear_tooth"></div>
+			<div class="big_gear_tooth"></div>
+		</div>
+		<div class="small_gear">
+			<div class="small_gear_center">
+				<span class="gear_text">Карпіка</span>
+			</div>
+			<div class="small_gear_tooth"></div>
+			<div class="small_gear_tooth"></div>
+			<div class="small_gear_tooth"></div>
+			<div class="small_gear_tooth"></div>
+		</div>
+	</div>
+	
+
+	<div name="MatrixUAcontainer">
+		<canvas id="Matrix"></canvas>
+		<div class="wrapper">
+			<main class="page">
+				<nav class="menu">
+					<ul data-line-effect class="menu_list">
+						<li class="menu_item">
+							<a href="#" class="menu_link" onclick="showAboutDeveloper()">Про розробника</a>
+							<div class="about_developer_body main-body" id="about_developer">
+								<h1 class="title1">Про розробника</h1>
+								<div class="textabout">
+									<p>Здоровенькі були! Мене звати Микола і я радий вас бачити у моїй криївці. Тут ви зможете дізнатись трохи про мене.</p>
+									<img src=".\author.jpg " alt="Батько наш - Бандера, Україна - мати" width="600" height="800" class="centered-img" loading="lazy"/>
+									<p>Я займаюсь науковою діяльністю, яка охоплює широкий спектр дисциплін, які цікаво та корисно вивчати. </p>
+									<p>
+										Наприклад, моя основна спеціалізація – екологія, завданнями якої є збір та аналіз даних.
+										Весь процес починається зі створення пристроїв, для якого я використовую мікроконтролери і сенсори з подальшим їхнім програмуванням та тестуванням.
+										Наступним кроком є налагодження бази даних для отримання показників.
+										Фінальним етапом є обробка отриманих пакетів інформації за допомогою різноманітних програм та відображення їх на інтерфейсах.
+									</p>
+									<p>
+										Детальніше про мій досвід та навички ви можете прочитати у моєму CV.
+									</p>
+									<p>
+										Щодо моїх захоплень, то понад усе я люблю три речі: мою родину, гори та D&D.
+									</p>
+									<p>Щастя любить тишу, тому не буду багато розповідати про сім’ю, але вона є моєю найбільшою підтримкою та натхненням у житті. </p>
+									<img src=".\mountains.jpg " alt="Карпати" width="800" height="600" class="centered-img" loading="lazy"/>
+									<p>
+										Горами я марив ще з дитинства і тоді ж відкрив для себе Карпати. Вони прекрасні як узимку, так і влітку. Ходити в похід саме туди найближче мені до душі.
+										Увесь біль і втома від кілометрових підйомів та спусків відступають, коли смажиш м’ясо на вогні, вдихаєш аромати хвойного лісу, а прохолодної ночі тебе гріє багаття.
+									</p>
+									<p>
+										Окрім того, я сміливо можу назвати себе Dungeon Master. Dungeons & Dragons – це не лише “настолка”, але й мистецтво командної гри та стратегії.
+										Обожнюю своїх гравців, бо саме вони є творцями тих захоплюючих історій, які можна прочитати лише в міфах чи епосах.
+										Кажу як майстер, варто поставити гравцям завдання, дати свободу вибору і крутезний сюжет та приємне проводження часу на весь вечір гарантовані.
+									</p>
+									<p>
+										Я відкритий до знайомств і завжди радий спілкуванню!
+										<a href="https://t.me/karpiknick">
+											<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 24 24"><path fill="currentColor" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12a12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472c-.18 1.898-.962 6.502-1.36 8.627c-.168.9-.499 1.201-.82 1.23c-.696.065-1.225-.46-1.9-.902c-1.056-.693-1.653-1.124-2.678-1.8c-1.185-.78-.417-1.21.258-1.91c.177-.184 3.247-2.977 3.307-3.23c.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345c-.48.33-.913.49-1.302.48c-.428-.008-1.252-.241-1.865-.44c-.752-.245-1.349-.374-1.297-.789c.027-.216.325-.437.893-.663c3.498-1.524 5.83-2.529 6.998-3.014c3.332-1.386 4.025-1.627 4.476-1.635z" /></svg>
+										</a>
+										<a href="https://steamcommunity.com/profiles/76561198375883915/">
+											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10c-4.6 0-8.45-3.08-9.64-7.27l3.83 1.58a2.843 2.843 0 0 0 2.78 2.27c1.56 0 2.83-1.27 2.83-2.83v-.13l3.4-2.43h.08c2.08 0 3.77-1.69 3.77-3.77s-1.69-3.77-3.77-3.77s-3.78 1.69-3.78 3.77v.05l-2.37 3.46l-.16-.01c-.59 0-1.14.18-1.59.49L2 11.2C2.43 6.05 6.73 2 12 2M8.28 17.17c.8.33 1.72-.04 2.05-.84c.33-.8-.05-1.71-.83-2.04l-1.28-.53c.49-.18 1.04-.19 1.56.03c.53.21.94.62 1.15 1.15c.22.52.22 1.1 0 1.62c-.43 1.08-1.7 1.6-2.78 1.15c-.5-.21-.88-.59-1.09-1.04l1.22.5m9.52-7.75c0 1.39-1.13 2.52-2.52 2.52a2.52 2.52 0 0 1-2.51-2.52a2.5 2.5 0 0 1 2.51-2.51a2.52 2.52 0 0 1 2.52 2.51m-4.4 0c0 1.04.84 1.89 1.89 1.89c1.04 0 1.88-.85 1.88-1.89s-.84-1.89-1.88-1.89c-1.05 0-1.89.85-1.89 1.89Z" /></svg>
+										</a>
+										<a href="https://github.com/KarpikNick">
+											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 128 128"><g fill="currentColor"><path fill-rule="evenodd" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388c0 26.682 17.303 49.317 41.297 57.303c3.017.56 4.125-1.31 4.125-2.905c0-1.44-.056-6.197-.082-11.243c-16.8 3.653-20.345-7.125-20.345-7.125c-2.747-6.98-6.705-8.836-6.705-8.836c-5.48-3.748.413-3.67.413-3.67c6.063.425 9.257 6.223 9.257 6.223c5.386 9.23 14.127 6.562 17.573 5.02c.542-3.903 2.107-6.568 3.834-8.076c-13.413-1.525-27.514-6.704-27.514-29.843c0-6.593 2.36-11.98 6.223-16.21c-.628-1.52-2.695-7.662.584-15.98c0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033c11.526-7.813 16.59-6.19 16.59-6.19c3.287 8.317 1.22 14.46.593 15.98c3.872 4.23 6.215 9.617 6.215 16.21c0 23.194-14.127 28.3-27.574 29.796c2.167 1.874 4.097 5.55 4.097 11.183c0 8.08-.07 14.583-.07 16.572c0 1.607 1.088 3.49 4.148 2.897c23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z" clip-rule="evenodd" /><path d="M26.484 91.806c-.133.3-.605.39-1.035.185c-.44-.196-.685-.605-.543-.906c.13-.31.603-.395 1.04-.188c.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28c-.396-.42-.47-.983-.177-1.254c.298-.266.844-.14 1.24.28c.394.426.472.984.17 1.255zm2.382 3.477c-.37.258-.976.017-1.35-.52c-.37-.538-.37-1.183.01-1.44c.373-.258.97-.025 1.35.507c.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23c-.527-.487-.674-1.18-.343-1.544c.336-.366 1.045-.264 1.564.23c.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486c-.683-.207-1.13-.76-.99-1.238c.14-.477.823-.7 1.512-.485c.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92c-.723.017-1.308-.387-1.315-.877c0-.503.568-.91 1.29-.924c.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117c-.7.13-1.35-.172-1.44-.653c-.086-.498.422-.997 1.122-1.126c.714-.123 1.354.17 1.444.663zm0 0" /></g></svg>
+										</a>
+									</p>
+									 
+									<p>Бажаєте запозичити код чи просто глянути мої роботи? Зазирніть у розділ з проєктами, щось-то стане в нагоді.</p>
+
+									<p>Хочете запропонувати співпрацю? Оцініть моє CV.</p>
+									<p>Дякую за ваш час та увагу, і сподіваюся, що моя криївка стала для вас цікавим місцем!</p>
+								</div>
+
+								<button class="backbutton" style="vertical-align:middle" onclick="toggleAboutDeveloper()"><span>На головну</span></button>
+							</div>
+						</li>
+						<li class="menu_item">
+							<a href="#" class="menu_link" onclick="showCV()">CV</a>
+							<div class="cv_body main-body" id="cv">
+								<h1 class="title1">CV</h1>
+								<div class="textabout">
+									<h2>CONTACTS</h2>
+									<p align="center" style="font-size:2vw"><b>Mykola Karpenko</b></p>
+									<p>Ukraine, Kyiv</p>
+									<p>Phone number 0951214829 (Viber, Telegram)</p>
+									<p>E-mail address: sapta@ukr.net</p>
+									<hr />
+									<h2>EDUCATION</h2>
+									<p>
+										01.10.2022(in process)  	National University of Food Technology	, Ukraine, Kyiv, 69 Volodymyrska street.
+										Ph.D. in Computer science. Remote sensing of hazardous substances in the combat zone in Eastern Ukraine.
+										Supervisor Serhii Chumachenko D.Sc. Head of the department of Automatization and computer systems of National University of Food Technology
+										, Ukraine, Kyiv, 69 Volodymyrska street.
+									</p>
+									<p>2020-2022 	National University of Food Technology	, Ukraine, Kyiv, 69 Volodymyrska street. M.S. in Computer science.</p>
+									<p>2016-2020    National University of Food Technology	, Ukraine, Kyiv, 69 Volodymyrska street. B.A. in Computer science.</p>
+									<hr />
+									<h2>PROFESSIONAL EXPIRIENCE</h2>
+									<p>
+										2023(in process) National Aviation University, Senior Specialist Supervisor Viktoriia Vasylenko Prof.
+										Head of the department of Computer Design and Graphics Technologies of National Aviation University, Ukraine, Kyiv, 1 Lubomir Guzar avenue.
+									</p>
+									<p>
+										2017-2018 National University of Food Technology, Laboratory assistant Supervisor Serhii Chumachenko D.Sc.
+										Head of the department of Automatization and computer systems of National University of Food Technology, Ukraine, Kyiv, 69 Volodymyrska street.
+									</p>
+									<hr />
+									<h2>SKILLS</h2>
+									<p>Programming languages: C++, C#, HTML, CSS, JavaScript(beginner) </p>
+									<p>Databases: SQL, TS-DB (InfluxDB, Firebase)</p>
+									<hr />
+									<h2>PROFESSIONAL  AFFILIATIONS</h2>
+									<p>Member of the "Association of Civil Defense Specialists" organization 11.03.2021(in process).</p>
+									<hr />
+									<h2>ADDITIONAL INFORMATION</h2>
+									<p>B2 level of English.</p>
+								</div>
+								<button class="backbutton" style="vertical-align:middle" onclick="togglecv()"><span>На головну</span></button>
+							</div>
+						</li>
+						<li class="menu_item">
+							<a href="#" class="menu_link" onclick="showProj()">Проєкти</a>
+							<div class="proj_body main-body" id="proj">
+								<h1 class="title1">Проєкти</h1>
+								<div class="textabout">
+									<p>Скоро все з'явиться</p>
+								</div>
+								<button class="backbutton" style="vertical-align:middle" onclick="toggleproj()"><span>На головну</span></button>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</main>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
